@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor {
+    width: 920px;
+    height: 280px;
+    margin: 0 auto;
+    
+    position: relative;
+    background: url(img/desierto.jpg) repeat-x 0px 0px;
+    background-size: 100% 94%;
+    background-position-x: 0px;
+    
+    overflow: hidden;
+}
+
+
+.dino {
+    width: 84px;
+    height: 84px;
+
+    position: absolute;
+    bottom: 22px;
+    left: 42px;
+    z-index: 2;
+
+    background: url(img/ninja.png) repeat-x 0px 0px;
+    background-size: 336px 84px;
+    background-position-x: 0px;
+
+}
+
+.dino-corriendo {
+    animation: animarDino 0.25s steps(2) infinite;
+}
+.dino-estrellado {
+    background-position-x: -252px;
+}
+
+.suelo {
+    width: 200%;
+    height: 32px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    background: url(img/suelo.png) repeat-x 0px 0px;
+    background-size: 50% 25px;
+
+}
+
+.cactus{
+    width: 100px;
+    height: 84px;
+
+    position: absolute;
+    bottom: 16px;
+    left: 600px;
+    z-index: 1;
+
+    background: url(img/oso.png) no-repeat;
+    background-size: 336px 84px;
+    background-position-x: 0px;
+}
+.cactus2{
+    width: 98px;
+    height: 66px;
+
+    background: url(img/cactus2.png) no-repeat;
+}
+
+.nube{
+    width: 92px;
+    height: 26px;
+
+    position: absolute;
+    z-index: 0;
+
+    background: url(img/nube.png) no-repeat;
+    background-size: 92px 26px;
+}
+
+.score{
+    width: 100px;
+    height: 30px;
+
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    z-index: 10;
+
+    color: #ff0000;
+    font-family: Verdana;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.game-over{
+    display: none;
+
+    position: absolute;
+    width: 100%;
+
+
+    text-align: center;
+    color: #cf2222;
+    font-size: 30px;
+    font-family: Verdana;
+    font-weight: 700;
+}
+
+@keyframes animarDino{
+    from{
+        background-position-x: -84px;
+    }
+    to{
+        background-position-x: -252px;
+    }
+}
+
+.boton{
+    position: absolute;
+    margin-top: 500px;
+    left: 41%;
+}
+
+.button {
+    width: 200px;
+    height: 100px;
+
+    position: absolute;
+    z-index: 0;
+
+    background: url(img/play1.png);
+    background-size: 200px 100px;
+    left: 47%;
+    align-content: center;
+}
+
+.titulo1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.titulo{
+    width: 500px;
+    height: 150px;
+    background: url(img/titulo.png);
+    position:absolute;
+    background-size: 100% 100%;
+    left: 30%;
+    margin-top: 100px;
+
+
+}
